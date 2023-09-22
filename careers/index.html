@@ -1,0 +1,1184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="prefetch" href="https://stackpath.bootstrapcdn.com/" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&amp;display=swap" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css"
+        integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Frost Digital Ventures: Careers</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+
+
+        h1 {
+            text-align: center;
+        }
+
+        .accordion {
+            width: 100%;
+            margin: auto;
+            color: black;
+            background-color: white;
+            padding: 45px 45px;
+        }
+
+        .accordion .container {
+            position: relative;
+			margin: auto;
+			margin-bottom: 20px;
+            padding: 20px;
+            border: 1px solid #D2D2D2;
+            border-radius: 10px;
+        }
+
+
+        .accordion .label {
+            position: relative;
+            padding: 10px;
+
+            /* border-radius: 10px; */
+            font-size: 30px;
+            color: black;
+            cursor: pointer;
+            display: flex;
+            flex-direction: row;
+        }
+		.title{
+			width:55%; 
+			font-size: 20px; 
+			font-weight: 600;
+			text-align: left; 
+		}
+
+
+        .accordion .label::before {
+            content: '+';
+            color: black;
+            position: absolute;
+            top: 50%;
+            right: 15px;
+            font-size: 30px;
+            transform: translateY(-50%);
+        }
+
+
+        .accordion .content {
+            position: relative;
+            background: white;
+            height: 0;
+            font-size: 20px;
+            text-align: justify;
+            width: 90%;
+            overflow: hidden;
+            margin-left: 20px;
+            transition: 0.5s;
+        }
+
+
+        .accordion hr {
+            width: 100;
+            margin-left: 0;
+            border: 1px solid grey;
+        }
+
+        .accordion .container.active .content {
+            height: 80%;
+        }
+
+        /* Changes from plus sign to negative sign once active */
+
+        .accordion .container.active .label::before {
+            content: '-';
+            font-size: 30px;
+            position: absolute;
+            top: 50%;
+            right: 15px;
+        }
+
+        ul li {
+            font-size: 14px;
+        }
+		.career{
+			width:38%;
+			display: flex; 
+			flex-direction: row;  
+			/* margin-left: 100px; */
+		}
+		.box{
+			padding-left: 15px;
+			 padding-top:5px; 
+			 padding-right: 15px; 
+			 height:30px; 
+			 margin: auto; 
+			 border-radius: 20px; 
+			 padding-top: 5px;
+		}
+		.boxText{
+			font-size: 16px;
+			margin:auto;
+			font-weight: 400;
+		}
+		@media only screen and (max-width: 1200px) {
+        .accordion {
+            padding: 30px;
+        }
+
+        .accordion .container {
+            padding: 15px;
+        }
+
+        .accordion .label {
+            font-size: 26px;
+        }
+
+        .title {
+            font-size: 18px;
+			width: 50%;
+        }
+
+        .accordion .label::before {
+            font-size: 26px;
+        }
+
+        .accordion .content {
+            font-size: 18px;
+        }
+		.career{
+			width:48%;
+			display: flex; 
+			flex-direction: row;  
+		}
+
+        .box {
+            padding-left: 12px;
+            padding-right: 12px;
+            height: 28px;
+        }
+
+        .boxText {
+            font-size: 14px;
+        }
+		.question-text{
+			font-size: 18px;
+		}
+    }
+
+	@media only screen and (max-width: 1000px) and (min-width: 768px) {
+        .accordion {
+            padding: 30px;
+        }
+
+        .accordion .container {
+            padding: 15px;
+        }
+
+        .accordion .label {
+            font-size: 26px;
+        }
+
+        .title {
+            font-size: 16px;
+			width: 50%;
+        }
+
+
+        .accordion .label::before {
+            font-size: 26px;
+        }
+
+        .accordion .content {
+            font-size: 18px;
+        }
+
+		.career{
+			width:45%;
+			display: flex; 
+			flex-direction: row;  
+		}
+
+        .box {
+            padding-left: 10px;
+            padding-right: 10px;
+            height: 28px;
+        }
+
+        .boxText {
+            font-size: 12px;
+        }
+		.question-text{
+			font-size: 18px;
+		}
+		.career-opening-content{
+			font-size: 14px;
+			width: 75%;
+		}
+
+    }
+
+	@media only screen and (max-width: 770px) and (min-width: 480px) {
+        .accordion {
+            padding: 30px;
+        }
+
+        .accordion .container {
+            padding: 15px;
+        }
+
+        .accordion .label {
+            font-size: 26px;
+			display: flex;
+			flex-direction: column;
+        }
+
+        .title {
+            font-size: 16px;
+			width: 50%;
+        }
+
+
+        .accordion .label::before {
+            font-size: 26px;
+        }
+
+        .accordion .content {
+            font-size: 18px;
+        }
+
+		.career{
+			width:75%;
+			margin-top: 10px;
+			display: flex; 
+			flex-direction: row;  
+		}
+
+        .box {
+            padding-left: 10px;
+            padding-right: 10px;
+            height: 28px;
+        }
+
+        .boxText {
+            font-size: 12px;
+        }
+		.question-text{
+			font-size: 18px !important;
+		}
+		.career-opening-content{
+			font-size: 14px;
+			width: 75%;
+		}
+		.career-opening-title{
+			font-size: 30px;
+			font-weight: 800;
+		}
+		.join-team-text{
+			font-size:60px;
+			position: absolute;
+    left: 20%;
+    top: 20%;
+		}
+    }
+
+	@media only screen and (max-width: 480px) and (min-width: 380px) {
+        .accordion {
+            padding: 10px;
+        }
+
+        .accordion .container {
+            padding: 10px;
+        }
+
+        .accordion .label {
+            font-size: 26px;
+			display: flex;
+			flex-direction: column;
+        }
+
+        .title {
+            font-size: 16px;
+			width: 50%;
+        }
+
+
+        .accordion .label::before {
+            font-size: 26px;
+        }
+
+        .accordion .content {
+            font-size: 14px;
+        }
+
+		.career{
+			width:85%;
+			margin-top: 10px;
+			display: flex; 
+	
+			flex-direction: row;  
+		}
+
+        .box {
+            padding-left: 10px;
+            padding-right: 10px;
+            height: 28px;
+			border-radius: 15px;
+        }
+
+        .boxText {
+            font-size: 12px;
+        }
+		.question-text{
+			font-size: 14px !important;
+		}
+		.career-opening-content{
+			font-size: 14px;
+			width: 75%;
+		}
+		.career-opening-title{
+			font-size: 28px;
+			font-weight: 800;
+		}
+		.join-team-text{
+			font-size: 48px;
+			position: absolute;
+    left: 20%;
+    top: 20%;
+		}
+	
+    }
+	
+	@media only screen and (max-width: 380px) and (min-width: 280px) {
+        .accordion {
+            padding: 8px;
+        }
+
+        .accordion .container {
+            padding: 9px;
+        }
+
+        .accordion .label {
+            font-size: 22px;
+			display: flex;
+			flex-direction: column;
+        }
+
+        .title {
+            font-size: 14px;
+			width: 50%;
+        }
+
+
+        .accordion .label::before {
+            font-size: 26px;
+        }
+
+        .accordion .content {
+            font-size: 14px;
+        }
+
+		.career{
+			width:85%;
+			margin-top: 10px;
+			display: flex; 
+	
+			flex-direction: row;  
+		}
+
+        .box {
+            padding-left: 10px;
+            padding-right: 10px;
+            height: 28px;
+			border-radius: 15px;
+        }
+
+        .boxText {
+            font-size: 10px;
+        }
+		.question-text{
+			font-size: 14px !important;
+		}
+		.career-opening-content{
+			font-size: 14px;
+			width: 75%;
+		}
+		.career-opening-title{
+			font-size: 28px;
+			font-weight: 800;
+		}
+		.join-team-text{
+			font-size: 38px;
+			position: absolute;
+    left: 20%;
+    top: 20%;
+		}
+	
+    }
+
+
+    </style>
+</head>
+
+<body>
+
+
+    <div>
+        <img src="./Hero Sectionwoberlay.png" class="banner-image" />
+        <div >
+            <div class="menu-icons" >
+
+
+                <a href="https://frostdigi.ai" target="_blank">
+                    <img src="https://frostdigi.ai/images/fdv_logo_circle_color.png" alt="Frost Digital Venture Icon" class="logo1">
+                  </a>
+                  
+                  <a href="https://frostdigi.ai" target="_blank">
+
+                    <img src="https://frostdigi.ai/images/fdv_logo_text.png" alt="Frost Digital Venture" class="logo">
+              
+                </a>
+
+            </div>
+            <p class="join-team-text">Join our team</p>
+        </div>
+    </div>
+    <p class="career-opening-title">Career Openings</p>
+    <div style="display: flex; justify-content: center">
+        <p class="career-opening-content">
+            We’re always looking for creative, talented self-starters to join the FDV family. Check out our current career openings and drop your cv at &nbsp;<a href='mailto:hr@frostdigi.ai'>hr@frostdigi.ai.</a>
+         </p>
+    </div>
+
+    <div class="accordion-body" ;>
+        <div class="accordion">
+
+            <div class="container">
+                <div class="label">
+                    <p class="title">Communications / Social Media Specialist
+                    </p>
+                    <div class="career" >
+                        <div class="box"
+                            style=" background-color: #CCCCCC; ">
+                            <p class="boxText">Full-time</p>
+                        </div>
+                        <div class="box" style=" background-color: #253671">
+                            <p class="boxText" style="color: white;">Senior-Level</p>
+                        </div>
+                        <div  class="box" style="background-color: #5DB6E6;">
+                            <p class="boxText" style="color: white;">3+ years Experience
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="content">
+                    <p style="font-size: 18px; font-weight: 600;">Responsibilities:</p>
+
+                    <ul>
+                        <li>Helping to create, manage and implement a comprehensive Communications Strategy for
+                            stakeholder community.</li>
+                        <li>Manage all communication platforms, including digital, virtual, and physical requirements on
+                            global basis.</li>
+                        <li>Developing and utilizing the spectrum of social media content as part of our comprehensive
+                            roadmap support strategy.</li>
+                        <li>Develop Communication plans that are consistent with the company’s brand identity.</li>
+                        <li>Creating consistent, meaningful content on all social media platforms, including writing and
+                            editing social media posts, improving customer engagement, and promoting social media
+                            campaigns.</li>
+
+                        <li>Managing a high volume of daily social media activity, feedback, user sentiments, etc – that
+                            is all
+                            captured in a comprehensive metrics reporting package (in real time).</li>
+                        <li> Communicating with social media followers, including responding to queries in a timely
+                            manner.</li>
+                        <li>Developing and managing social influencer programs and attending social influencer events.
+                        </li>
+                        <li>Develop Communication plans that are consistent with the company’s brand identity.</li>
+                        <li>Using analytical tools such as Google Analytics, Hootsuite Pro, and Facebook Insights to
+                            monitor
+                            and evaluate the organization’s social media presence and performance.</li>
+
+                        <li>Proofing and publishing all organizations media content including blogs, magazine articles,
+                            publications, and related communications content.</li>
+                        <li>Preparing periodic reports on social media marketing efforts.</li>
+                        <li>Working closely with Event Marketing and SCIP marketing efforts to align communications
+                            directly
+                            to the Marketing efforts.</li>
+                        <li>Staying up to date on best practices and emerging trends in social media.</li>
+                        <li>Performing other duties when needed.</li>
+                    </ul>
+
+                    <p style="font-size: 18px; font-weight: 600;">Requirements:</p>
+
+                    <ul>
+                        <li>Bachelor’s degree in journalism, communications, marketing, or a related field.</li>
+                        <li>Three or more years of social media experience including planning and managing content in
+                            corporate or agency setting.</li>
+                        <li>Familiarity and expert usage of a wide spectrum of social media channels and workstreams.
+                        </li>
+                        <li>Excellent written and verbal communication skills and must have a thorough understanding of
+                            social media management and strategy.</li>
+                        <li>Experience using various analytics software.</li>
+
+                        <li>Working knowledge of HTML and CSS a plus.</li>
+                        <li> Multi-tasking and time-management skills, with the ability to prioritize tasks.</li>
+                        <li>Ability to work in a fast-paced, high-pressure environment.
+                        </li>
+                        <button
+                            style="padding: 7px; margin-top: 15px; border-radius: 10px; background-color: #F28E36; border: none;">
+                            <a style="font-size: 14px; text-decoration: none; justify-content: center; display: flex; color: white;"
+                                href="mailto:hr@frostdigi.ai?subject=Application for Communications / Social Media Specialist">Drop your CV to apply</a>
+                        </button>
+
+                    </ul>
+
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="label">
+                    <p class="title">Education Lead</p>
+					<div class="career" >
+                        <div class="box"
+                            style=" background-color: #CCCCCC; ">
+                            <p class="boxText">Full-time</p>
+                        </div>
+                        <div class="box" style=" background-color: #253671">
+                            <p class="boxText" style="color: white;">Senior-Level</p>
+                        </div>
+                        <div  class="box" style="background-color: #5DB6E6;">
+                            <p class="boxText" style="color: white;">5+ years Experience
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="content">
+                    <p style="font-size: 18px; font-weight: 600;">Responsibilities:</p>
+                    <p style="font-size: 16px;">Responsible for managing the SCIP Education and Ambassador program, consisting of the following:
+                    </p>
+
+                    <ul>
+                        <li>Direct, manage and execute association’s education/professional development programs which
+                            include:</li>
+                        <ul>
+                            <li>Redesign and develop SCIP education modules into cohesive format, keeping content
+                                fresh, current and confirming that subject matter continues to provide value to
+                                stakeholders.</li>
+                        </ul>
+                        <ul>
+                            <li>Develop and create programming for Boot Camp program which includes:</li>
+                            <ul>
+                                <li>Scheduling of programming for calendar year.</li>
+                            </ul>
+                            <ul>
+                                <li>Development and of executing marketing and social media exposure for Boot
+                                    Camp Program.</li>
+                            </ul>
+                            <ul>
+                                <li>Instructor Recruitment.</li>
+                            </ul>
+                            <ul>
+                                <li>Boot Camp event logistics including venue, food and beverage and a/v sourcing
+                                    & contracting.</li>
+                            </ul>
+                            <ul>
+                                <li>Budget management for programming.</li>
+                            </ul>
+                            <ul>
+                                <li>Creating registration platforms in association management system.</li>
+                            </ul>
+                            <ul>
+                                <li>Managing registration.</li>
+                            </ul>
+                            <ul>
+                                <li>Front facing interface and communication with attendees pre, during and post
+                                    event.</li>
+                            </ul>
+                            <ul>
+                                <li>Evaluation collection and dissemination.</li>
+                            </ul>
+                            <ul>
+                                <li>Post event proforma reconciliation.</li>
+                            </ul>
+                        </ul>
+                        <ul>
+                            <li>Facilitate the ON-DEMAND education programming with partner,
+                                VoiceoftheBusinessAcademy.com inclusive of customer service, information
+                                dissemination and certificates of completion to participants.</li>
+                        </ul>
+
+                        <li>Virtual Event Management inclusive of:</li>
+                        <ul>
+                            <li>Sourcing, vetting and confirming facilitators to present webinars and virtual round
+                                tables for membership.</li>
+                            <li>Creation of calendar of virtual programming annually.</li>
+                            <li>Registration platform creation within association management system/ GTW/Zoom.</li>
+                            <li>Creation of marketing eblast copy and social media posts for virtual event program.</li>
+                            <li>Moderation of virtual programs with facilitator.</li>
+                        </ul>
+                        <li>Ambassador Program Management.</li>
+                        <ul>
+                            <li>Execution of the Chapter Revamp – which will include:</li>
+                            <ul>
+                                <li>Manage the organization, coordination and execution of all Intelligence Centers
+                                    of Excellence (ICoE) programs and events that will drive membership value with
+                                    all members and member types.</li>
+                                <li>Development of valuable ICoE programs along with regional/local volunteer
+                                    chapter leads.</li>
+                                <li>Provide logistical support for ICoE meetings including marketing, email and
+                                    social media support, setting up registration platform for meetings in
+                                    association management system, managing financials (registration fees) if
+                                    applicable within association management system.</li>
+                                <li>Assist with sourcing of low cost or free meeting spaces.</li>
+                                <li>Continue to provide virtual programming support including program
+                                    moderation, speaker recruitment and virtual program execution.</li>
+                                <li>Lead ICoE meetings in locations where Boot Camps or Conferences take place.</li>
+                            </ul>
+
+                        </ul>
+
+                        <li>Global Summits</li>
+                        <ul>
+                            <li>Development and execution of association’s global educational summits in Brazil, China,
+                                and South Africa inclusive of registration platform creation in association management
+                                system, event logistics and execution, assisting with program content and
+                                representation of SCIP at global events.</li>
+
+                        </ul>
+
+
+                    </ul>
+
+                    <p style="font-size: 18px; font-weight: 600;">Requirements:</p>
+
+                    <ul>
+                        <li>Bachelor’s degree in journalism, communications, marketing, or a related field.</li>
+                        <li>People-oriented and proficient in engaging with individuals and groups.</li>
+                        <li>Good speaker, personable, approachable, team player.</li>
+                        <li>5 or more years of marketing experience (digital and traditional) in a corporate, or agency
+                            environment.</li>
+                        <li>Ability and experience in project management.</li>
+
+                        <li>Great organizational skills.</li>
+                        <li>Proficient in Microsoft Office Suite (Word, Excel, Outlook, and Access), Adobe Creative
+                            Suite, and CRM and
+                            CMS software.</li>
+                        <li>Excellent written and verbal communication skills.
+                        </li>
+                        <li>Ability to work in a fast-paced, high-pressure environment.</li>
+                        <li>Multi-tasking and time-management skills, with the ability to prioritize tasks.</li>
+
+                        <li>Highly organized and detail oriented.</li>
+
+                        <button
+                            style="padding: 7px; margin-top: 15px; border-radius: 10px; background-color: #F28E36; border: none;">
+                            <a style="font-size: 14px; text-decoration: none; justify-content: center; display: flex; color: white;"
+                                href="mailto:hr@frostdigi.ai?subject=Application for Education Lead">Drop your CV to apply</a>
+                        </button>
+
+                    </ul>
+
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="label">
+                    <p class="title">Event Manager</p>
+					<div class="career" >
+                        <div class="box"
+                            style=" background-color: #CCCCCC; ">
+                            <p class="boxText">Full-time</p>
+                        </div>
+                        <div class="box" style=" background-color: #253671">
+                            <p class="boxText" style="color: white;">Senior-Level</p>
+                        </div>
+                        <div  class="box" style="background-color: #5DB6E6;">
+                            <p class="boxText" style="color: white;">1-2 years Experience
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="content">
+                    <p style="font-size: 18px; font-weight: 600;">Responsibilities:</p>
+
+                    <ul>
+                        <li>Conducts short- and long-term planning and management for events and sales.</li>
+                        <li>Develops and recommends the budget, marketing plans, and objectives and manages within
+                            those approved plans.</li>
+                        <li>Maintains or exceeds budgeted sales and profits in all event areas.</li>
+                        <li>Recommends, develops, and implements effective marketing plans for generating event
+                            revenues.</li>
+                        <li>Evaluates each piece of even business to ensure the business can properly be serviced.</li>
+
+                        <li>Assembles creative and innovative even attractions based on internal capabilities or
+                            outsources
+                            to qualified vendors.</li>
+                        <li> Trains, supervises, and works with even staff to solicit and book banquet and catering
+                            functions,
+                            as well as the planning, merchandising, and execution of the functions.</li>
+                        <li>Leads event team to build long-term, value-based customer relationships that enable the
+                            achievement of sales objectives.
+                        </li>
+                        <li>Administers all phases of the event department, including but not limited to sales,
+                            planning,
+                            marketing, servicing, and administrative procedures.</li>
+                        <li>Coaches and counsels employees to reflect company service standards and procedures.</li>
+
+                    </ul>
+
+                    <p style="font-size: 18px; font-weight: 600;">Requirements:</p>
+
+                    <ul>
+                        <li>Demonstrated ability to effectively interact with people of diverse socioeconomic, cultural,
+                            disability, and ethnic backgrounds.</li>
+                        <li>Service-oriented style with professional presentation skills.</li>
+                        <li>Highly energetic.</li>
+                        <li>Entrepreneurial spirit.</li>
+                        <li>Motivational leader.</li>
+
+                        <li>Effective in providing exceptional customer service.</li>
+                        <li> Ability to improve the bottom line.</li>
+                        <li>Clear concise written and verbal communication skills.
+                        </li>
+                        <li>Excellent organizational, interpersonal, and administrative skills.</li>
+                        <li>Hotel/Hospitality degree an asset, or clear knowledge and experience in project management.
+                        </li>
+
+                        <li>At least 1-2 years’ experience in a senior role in an Event/Catering environment.</li>
+                        <li>Proficient in Microsoft Word and Excel.</li>
+                        <button
+                            style="padding: 7px; margin-top: 15px; border-radius: 10px; background-color: #F28E36; border: none;">
+                            <a style="font-size: 14px; text-decoration: none; justify-content: center; display: flex; color: white;"
+                                href="mailto:hr@frostdigi.ai?subject=Application for Event Manager">Drop your CV to apply</a>
+                        </button>
+
+                    </ul>
+
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="label">
+                    <p class="title">MarComm Lead</p>
+                     <div class="career" >
+                        <div class="box"
+                            style=" background-color: #CCCCCC; ">
+                            <p class="boxText">Full-time</p>
+                        </div>
+                        <div class="box" style=" background-color: #253671">
+                            <p class="boxText" style="color: white;">Senior-Level</p>
+                        </div>
+                        <div  class="box" style="background-color: #5DB6E6;">
+                            <p class="boxText" style="color: white;">5+ years Experience
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="content">
+                    <p style="font-size: 18px; font-weight: 600;">Responsibilities:</p>
+
+                    <ul>
+                        <li>Developing and implementing marketing plans and campaigns.</li>
+                        <li>Undertaking competitor research and analyses, as needed.</li>
+                        <li>Understanding and working with market research to establish customer trends and habits.</li>
+                        <li>Establishing goals and objectives in order to reach our customers through appropriate
+                            marketing
+                            channels (digital and traditional).</li>
+                        <li>Creating and managing a comprehensive Marketing Dashboard on all facets of marketing
+                            efforts, metrics, and ROI.</li>
+
+                        <li>Ability to understand and adapt marketing strategy to plan future requirements based on
+                            gaps,
+                            priorities, competitive pressures, global events, and disruption. Promoting brand awareness
+                            through all marketing efforts.</li>
+                        <li>Creating marketing materials for our website and other marketing platforms.</li>
+                        <li>Working closely with our Website and Communications team to ensure exact alignment with
+                            our initiatives and priorities.
+                        </li>
+                        <li>Combine overall Marketing strategy with our Events Agency Marketing efforts to provide a
+                            seamless integrated strategy for the overall organization.</li>
+                        <li>Ability to employ both physical and virtual marketing tools and processes, including
+                            collateral
+                            content, targeted marketing processes, account-based marketing techniques and overall
+                            campaign-based programs that are global and comprehensive in nature.</li>
+
+                        <li>Performing analyses of marketing data and metrics, including campaign results, conversion
+                            rates, and online traffic in order to improve future marketing strategies and campaigns.
+                        </li>
+                        <li>Performing other duties when needed.</li>
+
+                    </ul>
+
+                    <p style="font-size: 18px; font-weight: 600;">Requriements:</p>
+
+                    <ul>
+                        <li>Bachelor’s degree in journalism, communications, marketing, or a related field.</li>
+                        <li>Three or more years of marketing experience (digital and traditional) in a corporate, or
+                            agency
+                            environment.</li>
+                        <li>Proficient in Microsoft Office Suite (Word, Excel, Outlook, and Access), Adobe Creative
+                            Suite,
+                            and CRM and CMS software.</li>
+                        <li>Working knowledge of HTML and CSS.</li>
+                        <li>Experience using analytics software.</li>
+
+                        <li>Excellent written and verbal communication skills.</li>
+                        <li> Ability to work in a fast-paced, high-pressure environment.</li>
+                        <li>Multi-tasking and time-management skills, with the ability to prioritize tasks.
+                        </li>
+                        <li>Highly organized and detail-oriented.</li>
+                        <button
+                            style="padding: 7px; margin-top: 15px; border-radius: 10px; background-color: #F28E36; border: none;">
+                            <a style="font-size: 14px; text-decoration: none; justify-content: center; display: flex; color: white;"
+                                href="mailto:hr@frostdigi.ai?subject=Application for Marcomm Lead">Drop your CV to apply</a>
+                        </button>
+
+                    </ul>
+
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="label">
+                    <p class="title">Web Developer and Analyst</p>
+					<div class="career" >
+                        <div class="box"
+                            style=" background-color: #CCCCCC; ">
+                            <p class="boxText">Full-time</p>
+                        </div>
+                        <div class="box" style=" background-color: #253671">
+                            <p class="boxText" style="color: white;">Senior-Level</p>
+                        </div>
+                        <div  class="box" style="background-color: #5DB6E6;">
+                            <p class="boxText" style="color: white;">3-5 years Experience
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="content">
+                    <p style="font-size: 18px; font-weight: 600;">Responsibilities:</p>
+
+                    <ul>
+                        <li>Website and software application designing, building, or maintaining.</li>
+                        <li>Using scripting or authoring languages, management tools, content creation tools,
+                            applications, and digital
+                            media.</li>
+                        <li>Conferring with teams to resolve conflicts, prioritize needs, develop content criteria, or
+                            choose solutions.</li>
+                        <li>Directing or performing Website updates.</li>
+                        <li>Developing or validating test routines and schedules to ensure that test cases mimic
+                            external interfaces and
+                            address all browser and device types.</li>
+
+                        <li>Editing, writing, or designing Website content, and directing team members who produce
+                            content.</li>
+                        <li> Maintaining an understanding of the latest Web applications and programming practices.</li>
+                        <li>Back up files from Web sites to local directories for recovery.
+                        </li>
+                        <li>Identifying problems uncovered by customer feedback and testing, and correcting or referring
+                            problems to
+                            appropriate personnel for correction.</li>
+                        <li>Evaluating code to ensure it meets industry standards, is valid, is properly structured, and
+                            is compatible with
+                            browsers, devices, or operating systems.</li>
+
+                    </ul>
+
+                    <p style="font-size: 18px; font-weight: 600;">Requirements:</p>
+
+                    <ul>
+                        <li>Bachelor's degree in Web development or related field, or relevant experience.</li>
+                        <li>Solid knowledge and experience in programming applications.</li>
+                        <li>Proficient in JavaScript, HTML, CSS, My SQL.</li>
+                        <li>Dedicated team player.</li>
+                        <li>Ability to thrive in a fast-paced environment.</li>
+
+                        <li>Solid ability in both written and verbal communication.</li>
+                        <li> Knowledge of programming language and technical terminology.</li>
+                        <li>Able to develop ideas and processes and clearly express them.
+                        </li>
+                        <li>High degree of independent judgment.</li>
+                        <li>Able to solve complex problems.</li>
+
+                        <button
+                            style="padding: 7px; margin-top: 15px; border-radius: 10px; background-color: #F28E36; border: none;">
+                            <a style="font-size: 14px; text-decoration: none; justify-content: center; display: flex; color: white;"
+                                href="mailto:hr@frostdigi.ai?subject=Application for Web Developer and analyst">Drop your CV to apply</a>
+                        </button>
+
+                    </ul>
+
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="label">
+                    <p class="title">Data Analyst
+                    </p>
+                    <div class="career" >
+                        <div class="box"
+                            style=" background-color: #CCCCCC; ">
+                            <p class="boxText">Full-time</p>
+                        </div>
+                        <div class="box" style=" background-color: #253671">
+                            <p class="boxText" style="color: white;">Mid-Level</p>
+                        </div>
+                        <div  class="box" style="background-color: #5DB6E6;">
+                            <p class="boxText" style="color: white;">2+ years Experience
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="content">
+                    <p style="font-size: 18px; font-weight: 600;">Responsibilities:</p>
+
+                    <ul>
+                        <li>Gather business requirements and interact with clients to deliver the required business reports & dashboards. </li>
+                        <li>Transform and translate raw data into informative and decision-making insights. </li>
+                        <li>Develop reports and transform and prepare data as required into compelling visualizations/dashboard reports. </li>
+                        <li>Connect, import, prepare, and transform data for BI. </li>
+                        <li>Visualize data, author reports, and schedule automated refresh of reports. </li>
+                        <li>Data should be interpreted, outcomes should be analyzed using statistical approaches, and reports should be sent on a scheduled basis.  </li>
+                        <li>Gather data from primary and secondary sources as inputs for the required reports/visualizations.</li>
+                        <li>Collect and clean data, and ensuring data accuracy within the generated reports.</li>
+                        <li>Identify and define the key performance indicators (KPIs) from the data with clear objectives.</li>
+                        <li>Automate & embed the reports and dashboards in web. </li>
+                      
+                    </ul>
+
+                    <p style="font-size: 18px; font-weight: 600;">Requirements:</p>
+
+                    <ul>
+                        <li>Proven experience in a similar role for at least two years.</li>
+                        <li>Proven experience in creating visualizations/dashboards in Tableau, Power BI or other similar BI tools.</li>
+                        <li>Experience in data preparation and visualizations using Excel.</li>
+                        <li>Experience with SQL queries.</li>
+                        <li>Experience coding in Python.</li>
+                        <li>Machine Learning and Artificial Intelligence knowledge/experience will be a plus.</li>
+                        <li>Excellent communication skills.</li>
+                        <li>Ability to work in alone or in a team as required for projects.</li>
+                        <li>Outstanding analytical and problem-solving skills.</li>
+                        <li>BSc in Computer Science, Data Analytics or similar field.</li>
+                        <button
+                            style="padding: 7px; margin-top: 15px; border-radius: 10px; background-color: #F28E36; border: none;">
+                            <a style="font-size: 14px; text-decoration: none; justify-content: center; display: flex; color: white;"
+                                href="mailto:hr@frostdigi.ai?subject=Application for Data Analyst">Drop your CV to apply</a>
+                        </button>
+
+                    </ul>
+
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="label">
+                    <p class="title">Senior Data Scientist
+                    </p>
+                    <div class="career" >
+                        <div class="box"
+                            style=" background-color: #CCCCCC; ">
+                            <p class="boxText">Full-time</p>
+                        </div>
+                        <div class="box" style=" background-color: #253671">
+                            <p class="boxText" style="color: white;">Senior-Level</p>
+                        </div>
+                        <div  class="box" style="background-color: #5DB6E6;">
+                            <p class="boxText" style="color: white;">2+ years Experience
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="content">
+                    <p style="font-size: 18px; font-weight: 600;">Responsibilities:</p>
+
+                    <ul>
+                        <li>Understand the company’s data gathering needs from internal or external sources. </li>
+                        <li>Develop methods for data collection and storage.</li>
+                        <li>Develop and implement appropriate data cleaning methods. </li>
+                        <li>Develop and implement ETL methods as needed</li>
+                        <li>Develop and implement methods for data fusion from diverse sources.</li>
+                        <li>Identify valuable data sources and automate data collection processes.</li>
+                        <li>Preprocess structured and unstructured data.</li>
+                        <li>Analyze large amounts of data to uncover trends and patterns.</li>
+                        <li>Develop predictive models and machine-learning algorithms.</li>
+                        <li>Combine models through ensemble modeling.</li>
+                        <li>Present information using data visualization techniques.</li>
+                        <li>Propose business-related solutions and strategies.</li>
+                        <li>Work with the engineering and product development teams to design new products.</li>
+                        <li>Develop data models and AI/ML models to generate actionable intelligence from the data for the target outcome.</li>
+                        <li>Creating new frameworks to collect data.</li>
+                        <li>Building tools to automate data collection.</li>
+                        <li>Searching through large data sets for usable information.</li>
+                        <li>Creating reports and presentations for business uses.</li>
+                        <li>Correlating similar data to find actionable results.</li>
+                        <li>Transferring data into a new format to make it more appropriate for analysis.</li>
+                        <li>Collecting data through means such as analyzing business results.</li>
+                        <li>Conduct model training and evaluation.</li>
+                        <li>Understand company and our client’s challenges and integrate AI capabilities to help create solutions.</li>
+                        <li>Develop functional design, process design (including scenario design, flow mapping), prototyping, testing, training, and defining support procedures.</li>
+                        <li>Document and articulate solution architecture.</li>
+                        <li>Convert machine learning models to application program interfaces (APIs) so that they can be used by other programs.</li>
+                        <li>Set up and manage AI development and product infrastructure and build data transformation infrastructure.</li>
+                    
+                    </ul>
+
+                    <p style="font-size: 18px; font-weight: 600;">Requirements:</p>
+
+                    <ul>
+                        <li>A bachelor’s degree in mathematics, statistics, computer science, or a business-related field; a minimum of 2 years of experience directly as a data scientist. </li>
+                        <li>Dynamic, motivating, and entrepreneurial-minded with an internal drive to continuously hit goals and deadlines. Proactive mentality with curiosity and desire to learn. </li>
+                        <li>Exceptional organizational and project management skills, ability to manage multiple projects, ability to meet deadlines, and strong attention to detail.</li>
+                        <li>Must be very comfortable with continuously changing opportunities and priorities. </li>
+                        <li>Team player with the ability to work cross-functionally.</li>
+                        <button
+                            style="padding: 7px; margin-top: 15px; border-radius: 10px; background-color: #F28E36; border: none;">
+                            <a style="font-size: 14px; text-decoration: none; justify-content: center; display: flex; color: white;"
+                                href="mailto:hr@frostdigi.ai?subject=Application for Senior Data Scientist">Drop your CV to apply</a>
+                        </button>
+
+                    </ul>
+
+                </div>
+            </div>
+            <div class="container">
+                <div class="label">
+                    <p class="title">HR Executive
+                    </p>
+                    <div class="career" >
+                        <div class="box"
+                            style=" background-color: #CCCCCC; ">
+                            <p class="boxText">Full-time</p>
+                        </div>
+                        <div class="box" style=" background-color: #253671">
+                            <p class="boxText" style="color: white;">Mid-Level</p>
+                        </div>
+                        <div  class="box" style="background-color: #5DB6E6;">
+                            <p class="boxText" style="color: white;">1-2 years Experience
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="content">
+                    <p style="font-size: 18px; font-weight: 600;">Responsibilities:</p>
+
+                    <ul>
+                        <li>Manage the recruitment process for open positions, including posting job vacancies, screening resumes, conducting interviews, and coordinating the hiring process.</li>
+                        <li>Require occasional travel to attend job fairs or recruitment events.</li>
+                        <li>Ensure compliance with relevant laws and regulations in the recruitment process.</li>
+                        <li>Develop and maintain relationships with recruitment agencies, job boards, and universities to source candidates.</li>
+                        <li>Maintain accurate employee records, including personnel files, benefits, and leave records.</li>
+                        <li>Assist with the preparation of HR reports and analytics, such as headcount and turnover reports.</li>
+                        <li>Ensure compliance with HR policies and procedures.</li>
+                        <li>Provide support to managers and employees on HR-related matters, including performance management, disciplinary actions, and grievances.</li>
+                        <li>Support the HR department in the delivery of HR projects, such as the implementation of new HR systems, policies, and procedures.</li>
+                        <li>Support in employer and employee branding activities.</li>
+                        <li>Participate in cross-functional project teams if required</li>
+                      
+                    </ul>
+
+                    <p style="font-size: 18px; font-weight: 600;">Requirements:</p>
+
+                    <ul>
+                        <li>Bachelor's degree in human resources, business administration, or a related field.</li>
+                        <li>1-2 years of experience in HR administration or recruitment.</li>
+                        <li>Strong knowledge of HR laws and regulations.</li>
+                        <li>Excellent interpersonal and communication skills.</li>
+                        <li>Ability to work independently and manage multiple priorities.</li>
+                        <li>Strong attention to detail and accuracy.</li>
+                        <li>Proficient in Microsoft Office applications.</li>
+                       
+                        <h3 style="margin-top: 15px;">Candidate with experience in Tech industry are highly preferred.</h3>
+                        <button
+                            style="padding: 7px; margin-top: 15px; border-radius: 10px; background-color: #F28E36; border: none;">
+                            <a style="font-size: 14px; text-decoration: none; justify-content: center; display: flex; color: white;"
+                                href="mailto:hr@frostdigi.ai?subject=Application for HR Executive">Drop your CV to apply</a>
+                        </button>
+
+                    </ul>
+
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+    <div style="margin: auto; justify-content: center; margin-bottom: 30px;">
+        <p class="question-text">Did not find your preferred job role?</p>
+        <p class="question-text">Send your CV at:
+            <a href="mailto:hr@frostdigi.ai?subject=Please find CV for reference">hr@frostdigi.ai</a>
+
+        </p>
+    </div>
+    </div>
+
+    <footer class="animate-aftr-visible" id="footer">
+        <section class="footer-top">
+            <div class="container d-flex has-1-col">
+                <div class="col footer-company-desc text-white" data-aos="fade-up" data-aos-delay="250" data-aos-duration="500">
+                    <div class="d-flex f-logo">
+                        <figure class="keeps-rotating">
+                            <img src="./fdv_logo_circle_white.png" alt="Frost Digital Venture" class="rotate-logo" />
+                        </figure>
+                        <figure class="fdv_text_logo" style="margin-left: 30px;">
+                            <img src="./fdv_logo_text.png" alt="First Digital Venture" />
+                        </figure>
+                    </div>
+
+                    <div class="d-flex has-1-col">
+                        <div class="col" style="text-align: center;">
+                            <h3 class="fx-36" style="font-size: 32px;">Frost Digital Ventures Inc .</h3>
+                            <span class="fx-24" style="font-size: 14px;">Harness the Power of Human+Digital+Artificial INTELLIGENCE™</span>
+                            <!--
+                            <div class="address">
+                                <h4 class="fx-22">Corporate Office:</h4>
+                                <p class="fx-18">3211 Scott Blvd #203,<br />Santa Clara, CA 95054</p>
+                            </div>
+                            -->
+                        </div>
+                  
+                        <div class="col text-center" style="font-size: 18px;">
+                            <p>©
+                                <script>
+                                    document.write(new Date().getFullYear())
+                                </script> Frost Digital Ventures Inc. All Rights Reserved</p>
+                            <!-- <a href="javascript:void(0);" class="text-white privacy-policy-btn">PRIVACY POLICY</a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+    
+    <script>
+
+
+        const accordion = document.getElementsByClassName('container');
+
+        for (i = 0; i < accordion.length; i++) {
+            accordion[i].addEventListener('click', function () {
+                this.classList.toggle('active')
+            })
+        }
+    </script>
+
+</body>
+
+</html>

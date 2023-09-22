@@ -1,0 +1,421 @@
+
+@media (min-width: 1500px){
+    .container {
+        max-width: 1560px;
+    }
+    .icon-box-sty .item .icon-holder{
+        height: 250px;
+    }
+    .ico-list-items .icon-holder{
+        -webkit-box-flex: 0;
+        flex: 0 0 300px;
+        -ms-flex: 0 0 300px;
+        max-width: 300px;
+    }
+    .ico-list-items .item .icon-holder .icon-fig img, .icon-box-sty .item .icon-holder img{
+        height: 124px;
+    }
+
+}
+
+@media screen  and (max-width: 1400px){
+    :root{
+        font-size: 12px;
+    }
+    .big-list-sty > .item .content p{
+        font-size: 1.5rem;
+    }
+    .section-three .content-wrapper .content{
+        font-size: 1.79rem;
+    }
+    .brd-l-content-sty {
+        padding-top: 20px;
+        font-size: 1.54rem;
+    }
+    .list-sty-dis ul li{
+        padding-bottom:40px ;
+    }
+    .ico-list-items .item .content span, .icon-box-sty .item .content > * {
+        font-size: 1.4rem;
+    }
+    .step-list-item.mt-5 .item .box-btn{
+
+    }
+
+    .ico-list-items .item > .content {
+        font-size: 1.6rem;
+    }
+    .request-section .content {
+        max-width: 1273px;
+        margin: 0 auto;
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+
+}
+@media screen and (min-width: 992px) {
+    .l-r-content-wrapper .right-content > div{
+        padding-left: 1.5rem;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .hero-banner{
+        padding: 200px 0 11rem;
+    }
+    .icon-box-sty .item .icon-holder{
+        height: 150px;
+
+    }
+    .icon-box-info-sty .main-title{
+        font-size: 2.9rem;
+    }
+}
+@media screen and (max-width: 991px) {
+    :root{
+        --lg-sz: 4.625rem;
+    }
+    .easy-steps ul .is-col-box h6 {
+        padding: 1.5rem 0;
+        font-size: 1.5rem;
+    }
+    .step-list-item .item .content .step-content,
+    .easy-steps ul .is-col-box .step-desc{
+        opacity: 1 !important;
+    }
+    section.section-four.pt-90 .hda-3-fmwk {
+        
+        margin-bottom: 70px;
+    }
+    .section-two .brd-l-content-sty,
+    .l-r-content-wrapper .col-lg-6.left-content > div{
+        padding-right: 0;
+    }
+    .list-sty-dis ul li,
+    .brd-l-content-sty{
+        font-size: 1.8rem;
+    }
+
+    .service-section{
+        padding: var(--section-gaps) 0 calc(var(--section-gaps) - 30px);
+        margin: 0;
+    }
+    .service-section .icon-box-sty .item{
+        margin: 0 0 30px;
+    }
+    .service-section .icon-box-sty > .row > div:nth-child(even) .item {
+        margin-top: 0px;
+    }
+    .l-r-content-wrapper .right-content{
+        margin-top: 30px;
+    }
+    .section-two .list-sty-dis {
+        margin-left: 0;
+        margin-top: 6rem;
+    }
+    .big-list-sty > .item:nth-child(even){
+        margin-left: 0;
+    }
+    .big-list-sty > .item:nth-child(odd):before,
+    .big-list-sty > .item:before{
+
+        left: 73px;
+        background: var(--secondary-color);
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+        z-index: -1;
+    }
+    .big-list-sty > .item .content{
+        padding-right: 0;
+    }
+    .big-list-sty > .item .content h3.title {
+        font-size: 2.5rem;
+    }
+    .box-content {
+        font-size: 1.9rem;
+    }
+
+}
+@media screen and (max-width: 900px) {
+
+}
+@media screen and (max-width: 768px) {
+    .step-list-item .item .num-holder span {
+        width: 170px;
+        height: 170px;
+        line-height: 157px;
+    }
+    .big-list-sty > .item .num span:after{
+        border: none;
+    }
+    .ico-list-items > .item{
+        -webkit-box-align: start !important;
+        -ms-flex-align: start !important;
+        align-items: flex-start !important;
+    }
+    .ico-list-items .item:before {
+        -webkit-transform: none;
+        -ms-transform: none;
+        transform: none;
+        top: 24px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .step-list-item .item .num-holder span{
+        outline: none;
+    }
+    .main-navigation-wrapper .col {
+        margin-top: 12rem;
+    }
+    .main-navigation-wrapper .container {
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
+    }
+    .step-list-item .row > div {
+        margin-bottom: 4.125rem;
+    }
+    .step-list-item .item .num-holder:before{
+        display: none;
+    }
+    .step-list-sec > h2.title.text-center.primary-color.md-sz.font-weight-bold.text-uppercase {
+        font-size: 2.6rem;
+        margin-bottom: 52px;
+    }
+    .step-list-item .item .content .title{
+        min-height: auto;
+    }
+    .step-list-item .item .content .step-content {
+        font-size: 1.8rem;
+    }
+
+    .step-list-item.mt-5 .item .box-btn{
+        padding: 15px;
+        border-radius: 50px;
+    }
+    .step-list-item .item .content .button-groups{
+        margin-top: 15px;
+    }
+    .step-list-item .item .num-holder span {
+        width: 150px;
+        height: 150px;
+        line-height: 140px;
+        font-size: 8.54rem;
+    }
+    .step-list-item.mt-5 .item .box-btn,
+    .step-list-sec .message {
+        font-size: 1.6rem;
+    }
+    .step-list-item .item .content .title {
+        font-size: 2rem;
+    }
+    .box-content.md {
+        padding: 40px 25px;
+    }
+
+}
+
+@media screen and (max-width: 575px) {
+    :root {
+        font-size: 9px;
+        --xxm-sz: 1.75rem;
+    }
+    .ico-list-items .item .content .title {
+        font-size: 20px;
+        margin-bottom: 16px;
+    }
+    section{
+        padding-left:0 ;
+        padding-right:0 ;
+    }
+    section.section-four .hda-3-fmwk p:nth-of-type(3) {
+        right: 0rem;   
+        bottom: -5rem; 
+    }
+    section.section-four .hda-3-fmwk p:nth-of-type(2) {
+     top: -2rem;
+    }
+    section.section-four .hda-3-fmwk p:nth-of-type(1) {
+        left: 0rem;
+        bottom: -5rem;
+    }
+    .hda-3-fmwk p, .hda-3-fmwk p * {
+        font-size: 12px;
+    }
+    #main-navigation-wrapper .fa-close {
+        font-size: 49px;
+        right: 32px;
+    }
+    .ico-list-items .item:before{
+        height: 100%;
+        top: 0;
+        right: 107%;
+    }
+    .icon-box-info-sty .main-title{
+        padding-left: 0px;
+        padding-right: 0px;
+
+    }
+    .step-section .easy-steps ul{
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    }
+    .step-section .easy-steps ul li {
+        max-width: 100%;
+        -webkit-box-flex: 0 !important;
+            -ms-flex: 0 0 100% !important;
+                flex: 0 0 100% !important;
+    }
+    .step-section .easy-steps ul .is-col-box.hda-diagnostic h6 {
+        
+        background-size: contain !important;
+    }     
+   .step-section .easy-steps ul .is-col-box h6 {
+        padding: 4.5rem 0;
+        font-size: 19px;    
+    } 
+    .main-navigation-wrapper .col li{
+        margin-bottom: 32px;
+    }
+    .main-navigation-wrapper .col li a {
+         font-size: 20px; 
+    }
+    .easy-steps ul .is-col-box span {
+        font-size: 17px;
+        padding: 8px 16px;
+    }
+    .easy-steps ul .is-col-box .step-desc {
+        font-size: 16px;
+    }
+    .form-overlay{
+        padding: 75px 10px 20px;
+    }
+    .form-close{
+        font-size: 25px;
+    }
+    .contact-form-sec .form-group input, .contact-form-sec .form-group textarea{
+        padding: 12px;
+        font-size: 16px;
+    }
+    .contact-form-sec button{
+        font-size: 16px;
+    }
+
+    .ico-list-items .item > .content {
+        font-size: 1.75rem;
+    }
+
+    .list-sty-dis ul li:after {
+        top: 17px;
+    }
+    .list-sty-dis ul li:before{
+        top: 3px;
+    }
+
+    .request-section .message{
+        font-size: 1.4rem;
+    }
+
+    .ico-list-items .item .icon-holder{
+        padding: 30px;
+        -webkit-box-flex: 0;
+        flex: 0 0 200px;
+        -ms-flex: 0 0 200px;
+        max-width: 200px;
+        margin-left: 0px;
+    }
+    .ico-list-items > .item + .item {
+        margin-top: 8rem;
+    }
+    .icon-box-info-sty .main-title {
+        padding-bottom: 8rem;
+        border-left: none;
+        margin-bottom: 0;
+    }
+    .big-list-sty > .item{
+        -webkit-box-align: start !important;
+        -ms-flex-align: start !important;
+        align-items: flex-start !important;
+    }
+    .section-three .content-wrapper .content{
+        padding: 0 ;
+    }
+    .section-three .big-list-sty.my-5 {
+        margin-top: 50px !important;
+    }
+    .big-list-sty > .item .num {
+        margin-top: -15px;
+    }
+    .big-list-sty > .item .num span {
+        height: 80px;
+        width: 80px;
+        line-height: 70px;
+        font-size: 4rem;
+    }
+    .big-list-sty > .item:nth-child(odd):before, .big-list-sty > .item:before{
+        left: 38px;
+    }
+    .big-list-sty > .item .content h3.title {
+        font-size: 2rem;
+    }
+    .box-content {
+        padding: 20px;
+        font-size: 1.8rem;
+    }
+    .ico-list-items .item .icon-holder{
+        margin-bottom: 30px;
+    }
+    .icon-box-sty .item .icon-holder,
+    .ico-list-items .item .icon-holder .icon-fig{
+        height: 150px;
+        font-size: 95px;
+    }
+    .icon-box-sty .item .content > *,
+    .ico-list-items .item .content span{
+        font-size: 1.6rem;
+    }
+    .ico-list-items .item > .content {
+        max-width: 100%;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        padding-left: 0px;
+    }
+    .ico-list-items > .item {
+        position: relative;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+
+}
+
+@media screen and (max-height:375px) {
+    .hero-banner{
+        min-height: 200vh;
+    }
+}
+@media screen and (max-width: 375px) {
+    .step-section .easy-steps ul .is-col-box h6 {
+        background-size: contain !important;
+    }
+    .big-list-sty > .item .content{
+        padding-left: 2rem;
+    }
+    .hero-banner {
+        padding: 140px 0 11rem;
+    }
+    .ico-list-items .item .icon-holder{
+        padding: 30px 20px;
+    }
+    .hero-banner .caption h1.lg-sz {
+        font-size: 3.5rem;
+    }
+}
+@media screen and (max-width: 320px) {
+    .big-list-sty > .item:before {
+        top: -52%;
+    }
+}
